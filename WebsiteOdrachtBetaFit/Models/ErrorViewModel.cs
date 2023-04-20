@@ -1,4 +1,4 @@
-namespace WebsiteOdrachtBetaFit.Models
+namespace TheBios.Models
 {
     public class ErrorViewModel
     {

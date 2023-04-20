@@ -18,7 +18,7 @@ namespace WebsiteOdrachtBetaFit.Controllers
         public IActionResult Index()
         {
             // alle producten ophalen
-            var rows = DatabaseConnector.GetRows("select * from product");
+            var rows = DatabaseConnector.GetRows("select * from films");
 
             // lijst maken om alle namen in te stoppen
             List<string> names = new List<string>();
@@ -26,13 +26,17 @@ namespace WebsiteOdrachtBetaFit.Controllers
             foreach (var row in rows)
             {
                 // elke naam toevoegen aan de lijst met namen
-                names.Add(row["naam"].ToString());
+                names.Add(row["name"].ToString());
             }
 
             // de lijst met namen in de html stoppen
             return View(names);
         }
-
+        [Route("Films")]
+        public IActionResult Films()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
