@@ -16,7 +16,7 @@ namespace WebsiteOdrachtBetaFit.Models
 
 
             // verbinding maken met de database
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            /*using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 // verbinding openen
                 conn.Open();
@@ -43,7 +43,7 @@ namespace WebsiteOdrachtBetaFit.Models
                         rows.Add(row);
                     }
                 }
-            }
+            }*/
 
             // return de lijst met namen
             return rows;
