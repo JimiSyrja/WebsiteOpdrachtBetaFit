@@ -13,6 +13,17 @@ html {
   min-height: 100%;
 }
 
+header {
+    height: 70px;
+    background-color: #827f7f;
+}
+
 body {
   margin-bottom: 60px;
+  background-color:#ffffff;
+}
+
+footer {
+    height: 70px;
+    background-color: #282828;
 }

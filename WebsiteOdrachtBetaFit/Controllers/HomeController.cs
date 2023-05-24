@@ -33,7 +33,7 @@ namespace WebsiteOdrachtBetaFit.Controllers
             return View(names);
         }
         [Route("Locaties")]
-        public IActionResult locaties()
+        public IActionResult Locaties()
         {
             return View();
         }
