@@ -44,6 +44,14 @@ namespace WebsiteOdrachtBetaFit.Controllers
             return View();
         }
 
+        [Route("show-all")]
+
+        public IActionResult ShowAll()
+        {
+
+            return View();
+
+        }
         [Route("Shop")]
         public IActionResult Shop()
         {
