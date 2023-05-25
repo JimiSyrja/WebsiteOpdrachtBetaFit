@@ -32,12 +32,20 @@ namespace WebsiteOdrachtBetaFit.Controllers
             // de lijst met namen in de html stoppen
             return View(names);
         }
-        [Route("Locaties")]
-        public IActionResult Locaties()
+        [Route("Locatie")]
+        public IActionResult Locatie()
         {
             return View();
         }
-        public IActionResult Privacy()
+
+        [Route("Trainers")]
+        public IActionResult Trainers()
+        {
+            return View();
+        }
+
+        [Route("Shop")]
+        public IActionResult Shop()
         {
             return View();
         }
