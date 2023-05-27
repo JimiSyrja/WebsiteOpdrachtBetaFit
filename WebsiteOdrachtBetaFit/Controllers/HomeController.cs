@@ -59,8 +59,11 @@ namespace WebsiteOdrachtBetaFit.Controllers
         }
 
         [Route("Contact")]
-        public IActionResult Contact()
+        public IActionResult Contact(string voornaam, string achternaam)
         {
+            ViewData["firstname"] = voornaam;
+            ViewData["lastname"] = achternaam;
+
             return View();
         }
 
