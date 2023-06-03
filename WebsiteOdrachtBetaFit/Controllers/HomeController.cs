@@ -17,6 +17,9 @@ namespace WebsiteOdrachtBetaFit.Controllers
 
         public IActionResult Index()
         {
+
+            ViewData["user"] = HttpContext.Session.GetString("User");
+
             // alle producten ophalen
             var rows = DatabaseConnector.GetRows("select * from locaties");
 
@@ -74,9 +77,15 @@ namespace WebsiteOdrachtBetaFit.Controllers
             return View(person);
         }
 
-        [Route("succes")]
-        public IActionResult Succes()
+        [Route("Login")]
+        public IActionResult Login(string username, string password)
         {
+            if (password == "geheim")
+            {
+                HttpContext.Session.SetString("User", username);
+                return Redirect("/");
+            }
+
             return View();
         }
 
