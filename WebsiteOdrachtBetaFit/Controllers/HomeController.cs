@@ -58,14 +58,28 @@ namespace WebsiteOdrachtBetaFit.Controllers
             return View();
         }
 
-        [Route("Contact")]
-        public IActionResult Contact(string voornaam, string achternaam)
-        {
-            ViewData["firstname"] = voornaam;
-            ViewData["lastname"] = achternaam;
 
+        public IActionResult Contact()
+        {
             return View();
         }
+
+
+        [HttpPost]
+        public IActionResult Contact(Person person)
+        {
+            if (ModelState.IsValid)
+                return Redirect("/succes");
+
+            return View(person);
+        }
+
+        [Route("succes")]
+        public IActionResult Succes()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
