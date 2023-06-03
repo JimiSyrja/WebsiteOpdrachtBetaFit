@@ -14,9 +14,12 @@ namespace WebsiteOdrachtBetaFit.Models
         [Required(ErrorMessage = "Emailadres is verplicht")]
         [EmailAddress(ErrorMessage = "Geen geldig email adres")]
         public string Email { get; set; }
-            public string Phone { get; set; }
-            public string Address { get; set; }
-
+        [Required(ErrorMessage = "Telefoonnummerr is verplicht")]
+        [Phone(ErrorMessage = "Geen geldig telefoonnummer")]
+        public string Phone { get; set; }
+        [Required(ErrorMessage = "Adres is verplicht")]
+        [Display(ErrorMessage = "Geen geldig ")]
+        public string Adres { get; set; }
         [Required(ErrorMessage = "Bericht is verplicht")]
         [Display(Name = "Bericht")]
         public string Description { get; set; }

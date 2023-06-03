@@ -17,9 +17,6 @@ namespace WebsiteOdrachtBetaFit.Controllers
 
         public IActionResult Index()
         {
-
-            ViewData["user"] = HttpContext.Session.GetString("User");
-
             // alle producten ophalen
             var rows = DatabaseConnector.GetRows("select * from locaties");
 
