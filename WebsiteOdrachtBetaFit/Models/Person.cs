@@ -5,23 +5,23 @@ namespace WebsiteOdrachtBetaFit.Models
 {
     public class Person
     {
-        [Required(ErrorMessage = "Gelieve uw voornaam in te vullen")]
-        [Display(Name = "Voornaam")]
+        [Required(ErrorMessage = "Please enter your name")]
+        [Display(Name = "Firstname")]
         public string FirstName { get; set; }
-        [Required(ErrorMessage = "Achternaam is een verplicht veld")]
-        [Display(Name = "Achternaam")]
+        [Required(ErrorMessage = "Lastname is a required field")]
+        [Display(Name = "Lastname")]
         public string LastName { get; set; }
-        [Required(ErrorMessage = "Emailadres is verplicht")]
+        [Required(ErrorMessage = "Emailadress is required")]
         [EmailAddress(ErrorMessage = "Geen geldig email adres")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Telefoonnummerr is verplicht")]
+        [Required(ErrorMessage = "Phonenummer is required")]
         [Phone(ErrorMessage = "Geen geldig telefoonnummer")]
         public string Phone { get; set; }
-        [Required(ErrorMessage = "Adres is verplicht")]
+        [Required(ErrorMessage = "Adress not entered")]
 /*        [Display(ErrorMessage = "Geen geldig ")]
 */        public string Adres { get; set; }
-        [Required(ErrorMessage = "Bericht is verplicht")]
-        [Display(Name = "Bericht")]
+        [Required(ErrorMessage = "Message is necessary")]
+        [Display(Name = "Message")]
         public string Description { get; set; }
         }
     }
