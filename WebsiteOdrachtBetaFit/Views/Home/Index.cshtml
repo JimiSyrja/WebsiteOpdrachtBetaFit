@@ -1,35 +1,45 @@
 ﻿@model List<string>
-    @{
-        ViewData["Title"] = "TheBios - Home";
-
+@{
+    ViewData["Title"] = "TheBios - Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Sportschool Den Haag</h1>
-    <h2 class="display-4">Centrum Beta Fit</h2>
-    @foreach(string naam in Model)
-    {
-         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    }
-</div>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body class="background-image">
+    <div class="text-center">
+        <h1 class="display-4">Sportschool Den Haag</h1>
+        <h2 class="display-4">Centrum Beta Fit</h2>
+        @foreach (string naam in Model)
+        {
+            <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        }
+    </div>
 
+    <div class="text-center">
+        <p>
+            Bij sportschool BETA FIT in Den Haag vind je de perfecte omgeving om voluit te trainen.
+            Onze gemoedelijke sfeer en persoonlijke aanpak zorgen ervoor dat je je thuis voelt en tegelijkertijd wordt uitgedaagd.
+            Met onze personal trainers en groepslessen bieden we de juiste trainingsschema's en extra uitdagingen om je doelen te bereiken.
+            Welkom bij BETA FIT, dé sportschool in Den Haag centrum
+        </p>
 
-<p>
-    Bij sportschool BETA FIT in Den Haag vind je de perfecte omgeving om voluit te trainen.
-    Onze gemoedelijke sfeer en persoonlijke aanpak zorgen ervoor dat je je thuis voelt en tegelijkertijd wordt uitgedaagd. 
-    Met onze personal trainers en groepslessen bieden we de juiste trainingsschema's en extra uitdagingen om je doelen te bereiken. 
-    Welkom bij BETA FIT, dé sportschool in Den Haag centrum
-</p>
+        <p class="position1">
+            Sport 5 Weken Gratis
+        </p>
 
-    <p1>
-       Sport 5 Weken Gratis
-    </p1>
+        <p class="position2">
+            Tijdelijke Actie: Krijg na 5 weken Gratis + een sporttas cadeau bij een nieuw jaarlidmaatschap. Profiteer snel
+        </p>
 
-    <p2>
-        Tijdelijke Actie: Krijg na 5 weken Gratis + een sporttas cadeau bij een nieuw jaarlidmaatschap. Profiteer snell
-    </p2>
-
-    <p3>
-        Word Lid!     Word Lid!     Word Lid!
-    </p3>
-    </>
+        <p class="position3">
+            Word Lid!     Word Lid!     Word Lid!
+        </p>
+    </div>
+</body>
+</html>

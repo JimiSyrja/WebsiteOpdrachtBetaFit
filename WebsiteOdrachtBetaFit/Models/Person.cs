@@ -18,8 +18,8 @@ namespace WebsiteOdrachtBetaFit.Models
         [Phone(ErrorMessage = "Geen geldig telefoonnummer")]
         public string Phone { get; set; }
         [Required(ErrorMessage = "Adres is verplicht")]
-        [Display(ErrorMessage = "Geen geldig ")]
-        public string Adres { get; set; }
+/*        [Display(ErrorMessage = "Geen geldig ")]
+*/        public string Adres { get; set; }
         [Required(ErrorMessage = "Bericht is verplicht")]
         [Display(Name = "Bericht")]
         public string Description { get; set; }

@@ -45,6 +45,28 @@ img2 {
 
 
 
+.position1 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.position2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.position3 {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.background-image {
+    background-image: url("Images/sportschool-kiezen.jpg");
+    background-size: cover;
+}
 
 .contactform label {
     width: 100px;
