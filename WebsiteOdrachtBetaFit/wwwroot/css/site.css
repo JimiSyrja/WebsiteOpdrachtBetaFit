@@ -63,7 +63,63 @@ label {
     display: block;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
 
+.left-section, .right-section {
+    flex-basis: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #4343;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blanchedalmond;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+    
+    /*.container1 {
+    display: flex;
+    justify-content: space-between;
+}*/
+
+    .location-info {
+    width: 50%;
+    padding: 20px;
+}
+
+.google-map {
+    width: 10%;
+    position: absolute;
+    top: 150px;
+    right: 610px;
+    text-align: center;
+}
 
 
 .position0 {
