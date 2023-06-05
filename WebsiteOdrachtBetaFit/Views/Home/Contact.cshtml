@@ -2,56 +2,58 @@
 @{
     ViewData["Title"] = "Contact";
 }
-<h1>@ViewData["Title"]</h1>
-
-@*<form method="post">
-  <div>Voornaam: <input type="text" name="firstname" /></div>
-  <div>Achternaam: <input type="text" name="lastname" /></div>
-  <div>E-mail: <input type="text" name="email" /></div>
-  <div>Telefoon: <input type="text" name="phone" /></div>
-  <div>Adres: <input type="text" name="address" /></div>
-  <div>Beschrijving: <input type="text" name="address" /></div>
-  <input type="submit" value="verstuur" />
-</form>
-*@
-
-
-<form method="post" class="contactform">
-  <div class="form-group">
-    @Html.LabelFor(m => m.FirstName)
-    @Html.TextBoxFor(m => m.FirstName)
-    @Html.ValidationMessageFor(m => m.FirstName)
-  </div>
-
-    <div class="form-group">
-        @Html.LabelFor(m => m.LastName)
-        @Html.TextBoxFor(m => m.LastName)
-        @Html.ValidationMessageFor(m => m.LastName)
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Contact</h1>
     </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email)
-        @Html.TextBoxFor(m => m.Email)
-        @Html.ValidationMessageFor(m => m.Email)
-    </div>
+    <form method="post" class="contactform">
+        <div class="form-group">
+            @Html.LabelFor(m => m.FirstName)
+            @Html.TextBoxFor(m => m.FirstName)
+            @Html.ValidationMessageFor(m => m.FirstName)
+        </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.Phone)
-        @Html.TextBoxFor(m => m.Phone)
-        @Html.ValidationMessageFor(m => m.Phone)
-    </div>
-    
-    <div class="form-group">
-        @Html.LabelFor(m => m.Adres)
-        @Html.TextBoxFor(m => m.Adres)
-        @Html.ValidationMessageFor(m => m.Adres)
-    </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.LastName)
+            @Html.TextBoxFor(m => m.LastName)
+            @Html.ValidationMessageFor(m => m.LastName)
+        </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.Description)
-        @Html.TextBoxFor(m => m.Description)
-        @Html.ValidationMessageFor(m => m.Description)
-    </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email)
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
 
-    <input type="submit" value="Send>
-</form>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Phone)
+            @Html.TextBoxFor(m => m.Phone)
+            @Html.ValidationMessageFor(m => m.Phone)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Adres)
+            @Html.TextBoxFor(m => m.Adres)
+            @Html.ValidationMessageFor(m => m.Adres)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Description)
+            @Html.TextBoxFor(m => m.Description)
+            @Html.ValidationMessageFor(m => m.Description)
+        </div>
+
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
+

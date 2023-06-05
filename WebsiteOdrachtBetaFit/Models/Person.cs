@@ -3,7 +3,8 @@ using System.Xml.Linq;
 
 namespace WebsiteOdrachtBetaFit.Models
 {
-    public class Person
+/*   public class Product
+*/    public class Person
     {
         [Required(ErrorMessage = "Please enter your name")]
         [Display(Name = "Firstname")]
