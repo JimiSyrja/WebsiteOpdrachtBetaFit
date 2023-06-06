@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Images\foto1.png" />
+    <None Include="wwwroot\Images\sportschool-kiezen.jpg" />
+    <None Include="wwwroot\Images\Sportschool.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.33" />
   </ItemGroup>
 
