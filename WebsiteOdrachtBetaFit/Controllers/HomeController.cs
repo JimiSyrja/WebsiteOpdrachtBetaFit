@@ -52,6 +52,14 @@ namespace WebsiteOdrachtBetaFit.Controllers
             return View();
 
         }
+        [Route("Price")]
+        public IActionResult Price()
+        {
+            return View();
+        }
+
+
+
         [Route("Shop")]
         public IActionResult Shop()
         {

@@ -19,7 +19,7 @@ header {
 }
 
 body {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     background-image: url("https://imgur.com/YMulMba.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ label {
 
 .left-section, .right-section {
     flex-basis: 45%;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #ddd;
     background-color: #4343;
 }
@@ -97,70 +97,93 @@ label {
 .search-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: blanchedalmond;
-    color: #fff;
+    background-color: black;
+    color: white;
     border: none;
     cursor: pointer;
 }
-    
-    /*.container1 {
+
+
+/*.container1 {
     display: flex;
     justify-content: space-between;
 }*/
 
-    .location-info {
+.location-info {
     width: 50%;
     padding: 20px;
+    text-align: left;
 }
 
-.google-map {
-    width: 10%;
-    position: absolute;
-    top: 150px;
-    right: 610px;
+.new-locations {
+    animation: zoom 5s ease-in-out infinite;
     text-align: center;
 }
+    
+@keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .google-map {
+        width: 10%;
+        position: absolute;
+        top: 150px;
+        right: 610px;
+        text-align: center;
+    }
 
 
-.position0 {
-    text-align: left;
-    margin-bottom: 90px;
-    color: white;
-}
+    .position0 {
+        text-align: left;
+        margin-bottom: 90px;
+        color: white;
+    }
 
-.display-4 {
-    text-align:center;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
-    font-size: 50px;
-    color: #f7f7f7;
-}
+    .display-4 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-size: 50px;
+        color: #f7f7f7;
+    }
 
-.position {
-    text-align: çenter;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: Cambria, sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #cacbcc;
-}
+    .position {
+        text-align: çenter;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: Cambria, sans-serif;
+        font-style: italic;
+        font-size: 15px;
+        color: #cacbcc;
+    }
 
-.position1 {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: "Arial", sans-serif;
-    font-size: 24px;
-    animation: position1 5s infinite;
-}
+    .position1 {
+        /*    text-align: right;
+*/ top: 20px;
+        left: 30px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: "Arial", sans-serif;
+        font-size: 24px;
+        animation: position1 5s infinite;
+    }
 
-@keyframes position1 {
-    0% {color: white;
+    @keyframes position1 {
+        0% {color: white;
     }
 
     25% {color: blue;
@@ -178,8 +201,9 @@ label {
 
 .position2 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 0.2;
     font-family: "Arial", sans-serif;
     font-weight: normal;
     transition: font-weight 0.3s ease;
@@ -192,33 +216,40 @@ label {
 }
 
 .position3 {
-    text-align: right;
-    margin-top: 20px;
-    margin-bottom: 0;
+  
+    margin-top: 10px;
+/*    margin-bottom: 50px;
+*/    display: flex;
+    justify-content: space-between;
     font-size: 24px;
     font-weight: bold;
-    animation: position3 10s infinite;
-}
-
-@keyframes position3{
-    0% {color: white;
-    }
-
-    25% {color: black
-    }
-
-    50% {color: white
-    }
-
-    75% {color: black;
-    }
-
-    100% {color: black;
-    }
+    animation: position3 15s infinite;
 }
 
 
-.background-image {
+    @keyframes position3 {
+        0% {
+            color: white;
+        }
+
+        25% {
+            color: black
+        }
+
+        50% {
+            color: white
+        }
+
+        75% {
+            color: black;
+        }
+
+        100% {
+            color: black;
+        }
+    }
+
+    .background-image {
     background-image: url("Images/sportschool-kiezen.jpg");
     background-size: cover;
 }
@@ -244,3 +275,48 @@ img{
     height: 70px;
     width: 70px;
 }
+
+
+.pricing-card {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+    .pricing-card h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .pricing-card .price {
+        color: #666;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .pricing-card ul {
+        list-style-type: none;
+        padding: 0;
+        color: black;
+    }
+
+        .pricing-card ul li {
+            margin-bottom: 10px;
+            color: black;
+        }
+
+    .pricing-card a.btn {
+        background-color: #333;
+        color: #fff;
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
