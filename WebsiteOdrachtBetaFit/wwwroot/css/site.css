@@ -70,6 +70,13 @@ label {
     color: white;
 }
 
+
+.container1 {
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 .left-section, .right-section {
     flex-basis: 45%;
     padding: 25px;
@@ -112,10 +119,6 @@ label {
 }
 
 
-/*.container1 {
-    display: flex;
-    justify-content: space-between;
-}*/
 
 .location-info {
     width: 50%;
@@ -178,7 +181,7 @@ label {
     color: #f7f7f7;
 }
     .position {
-        text-align: çenter;
+        text-align: center;
         margin-top: 0;
         margin-bottom: 20px;
         font-weight: bold;
@@ -242,7 +245,7 @@ label {
     justify-content: space-between;
     font-size: 24px;
     font-weight: bold;
-    animation: position3 15s infinite;
+    animation: position3 7s infinite;
 }
 
 
@@ -351,7 +354,9 @@ img{
     font-weight: bold;
 }
 
-
+.nav-item{
+    font-size: 20px;
+}
 .product-list {
     display: flex;
     flex-wrap: wrap;
