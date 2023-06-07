@@ -149,16 +149,26 @@ label {
         color: white;
     }
 
-    .display-4 {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-weight: bold;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
-        font-size: 50px;
-        color: #f7f7f7;
-    }
 
+.display-4 {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    font-size: 50px;
+    color: #f7f7f7;
+}
+
+.display-5 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    font-size: 50px;
+    color: #f7f7f7;
+}
     .position {
         text-align: çenter;
         margin-top: 0;
@@ -218,7 +228,7 @@ label {
 
 .position3 {
   
-    margin-top: 10px;
+    margin-top: 280px;
 /*    margin-bottom: 50px;
 */    display: flex;
     justify-content: space-between;
@@ -346,3 +356,4 @@ img{
     padding: 10px;
     border: 1px solid #ccc;
 }
+
