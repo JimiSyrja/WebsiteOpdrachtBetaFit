@@ -45,6 +45,9 @@ body {
 footer {
     height: 70px;
     background-color: #282828;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 
@@ -71,9 +74,8 @@ label {
 }
 
 
-.container1 {
-    justify-content: center;
-    align-items: center;
+.container2 {
+    text-align: center;
     color: white;
 }
 
