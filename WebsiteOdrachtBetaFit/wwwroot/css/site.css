@@ -121,12 +121,18 @@ label {
 
 
 .location-info {
+    position: relative;
+    top: 100px;
     width: 50%;
     padding: 20px;
+    font-size: 25px;
     text-align: left;
 }
 
 .new-locations {
+    position: relative;
+    bottom: 50px;
+    left: 125px;
     animation: zoom 5s ease-in-out infinite;
     text-align: center;
 }
@@ -148,7 +154,7 @@ label {
     .google-map {
         width: 10%;
         position: absolute;
-        top: 150px;
+        top: 275px;
         right: 610px;
         text-align: center;
     }
@@ -370,3 +376,11 @@ img{
     border: 1px solid #ccc;
 }
 
+.contact-info {
+    position: relative;
+    bottom:142px;
+    left:300px;
+    padding: 20px;
+    font-size: 25px;
+    text-align: left;
+}
