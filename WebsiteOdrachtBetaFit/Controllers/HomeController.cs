@@ -91,6 +91,12 @@ namespace WebsiteOdrachtBetaFit.Controllers
             return View();
         }
 
+       /* public IActionResult QRcode()
+        {
+            return RedirectToAction("qrcode-page", "Home");
+        }
+*/
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

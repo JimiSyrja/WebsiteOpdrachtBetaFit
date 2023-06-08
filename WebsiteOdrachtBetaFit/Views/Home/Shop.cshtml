@@ -11,6 +11,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="site.css">
+   @* <style>
+        .buy-section {
+            position: relative;
+        }
+
+        .qr-container {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            text-align: right;
+        }
+
+        .qr-code {
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            max-width: 6000px;
+        }
+
+            .qr-code.show {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+        .qr-text {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>*@
 </head>
 <body>
     <div class="text-center">
@@ -24,8 +53,17 @@
                 <h2>Advanced Protein</h2>
                 <p>A high-quality protein supplement to support muscle growth and recovery.</p>
                 <p>Price: €19.99</p>
-                <button class="buy-button">Buy now</button>
+                <button class="buy-button" @*onclick="redirectToQRCodePage()"*@>Buy now</button>
             </div>
+
+              @*  <div class="buy-section">
+                    <button id="qr-button" class="buy-button">Klik hier voor QR-code</button>
+                    <div id="qr-container" class="qr-container">
+                        <p class="qr-text">Scan de QR-code hieronder om de betaling te voltooien:</p>
+                        <img id="qr-code" class="qr-code" src="/Images/qrcode.png" alt="QR-code">
+                    </div>
+                </div>
+            </div>*@
             <div class="product-item">
                 <img src="/Images/preworkoutignite.png" alt="Supplement 2" class="product-image">
                 <h2>Pre-Workout Ignite</h2>
@@ -49,5 +87,13 @@
             </div>
         </div>
     </main>
+
+@*    <script>
+        function redirectToQRCodePage() {
+            window.location.href = "/qrcode-page.cshtml";
+        }
+    </script>*@
 </body>
 </html>
+
+

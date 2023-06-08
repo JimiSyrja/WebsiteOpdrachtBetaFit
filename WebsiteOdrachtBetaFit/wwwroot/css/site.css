@@ -284,7 +284,7 @@ label {
     background-size: cover;
 }
 
-.form-group {
+/*.form-group {
     text-align: center, right;
     font-size: 15px;
     font-weight: bold;
@@ -298,7 +298,61 @@ label {
 .contactform .field-validation-error {
     color: red;
     margin-left: 100px;
+}*/
+
+
+
+.contactform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+
 }
+
+    .contactform label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .contactform input[type="text"],
+    .contactform textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border: none;
+    }
+
+.field-validation-error {
+    color: red;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.contactform input[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    .contactform input[type="submit"]:hover {
+        background-color: #ddd;
+    }
+
+
+
 
 
 img{
@@ -357,6 +411,7 @@ img{
         text-decoration: none;
         transition: background-color 0.3s ease;
     }
+
 
 .navbar-nav .nav-item.active .nav-link {
     font-weight: bold;
