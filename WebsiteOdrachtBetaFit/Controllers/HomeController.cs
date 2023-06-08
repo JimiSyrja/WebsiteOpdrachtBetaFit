@@ -70,6 +70,7 @@ namespace WebsiteOdrachtBetaFit.Controllers
         [Route("Contact")]
         public IActionResult Contact()
         {
+
             return View();
         }
 
