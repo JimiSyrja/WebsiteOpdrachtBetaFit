@@ -37,3 +37,12 @@ function checkCookie() {
         }
     }
 }
+
+
+const darkModeButton = document.getElementById('darkModeButton');
+const innerCircle = document.querySelector('.inner-circle');
+
+darkModeButton.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+    innerCircle.style.left = document.body.classList.contains('dark-mode') ? 'calc(100% - 20px)' : '0';
+});

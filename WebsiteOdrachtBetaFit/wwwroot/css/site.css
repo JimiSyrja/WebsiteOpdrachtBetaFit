@@ -100,24 +100,27 @@ label {
 .search-input {
     position: relative;
     top: 24px;
-    right: 100px;
+    right: 80px;
+    width: 300px;
     flex-grow: 1;
     padding: 10px;
     font-size: 16px;
+    border-radius: 25px;
 }
 
 .search-button {
-    position:relative;
+    position: relative;
     bottom: 24px;
-    left: 100px;
-    width:120px;
-    height:48px;
+    left: 155px;
+    width: 120px;
+    height: 48px;
     padding: 10px 20px;
     font-size: 16px;
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 
@@ -470,3 +473,39 @@ img{
     font-size: 50px;
     color: #f7f7f7;
 }
+
+
+.dark-mode-button {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    background-color: #222;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    overflow: hidden;
+}
+
+    .dark-mode-button .inner-circle {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: left 0.3s;
+    }
+
+.dark-mode .dark-mode-button {
+    background-color: #eee;
+}
+
+    .dark-mode .dark-mode-button .inner-circle {
+        left: calc(100% - 5px);
+        transform: translate(50%, -50%);
+        background-color: #000;
+    }
+
+
