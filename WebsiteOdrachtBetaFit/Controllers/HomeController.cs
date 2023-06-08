@@ -84,17 +84,13 @@ namespace WebsiteOdrachtBetaFit.Controllers
             return View(person);
         }
 
-        [Route("Login")]
-        public IActionResult Login(string username, string password)
+        public IActionResult PageNotFound(string searchTerm)
         {
-            if (password == "geheim")
-            {
-                HttpContext.Session.SetString("User", username);
-                return Redirect("/");
-            }
-
+            // Gebruik de searchTerm om eventuele logica uit te voeren of geef deze door aan de weergave (View)
+            Response.StatusCode = 404;
             return View();
         }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

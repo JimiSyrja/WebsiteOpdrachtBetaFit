@@ -99,7 +99,7 @@ label {
 
 .search-input {
     position: relative;
-    top: 0px;
+    top: 24px;
     right: 100px;
     flex-grow: 1;
     padding: 10px;
@@ -108,8 +108,8 @@ label {
 
 .search-button {
     position:relative;
-    top: 0px;
-    right: 100px;
+    bottom: 24px;
+    left: 100px;
     width:120px;
     height:48px;
     padding: 10px 20px;
@@ -385,4 +385,33 @@ img{
     padding: 20px;
     font-size: 25px;
     text-align: left;
+}
+
+#social-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1px;
+}
+
+    #social-buttons a {
+        margin-left: 15px;
+        
+    }
+
+    #social-buttons img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        bottom: 10px;
+        
+    }
+
+.position5 {
+    text-align: left;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    font-size: 50px;
+    color: #f7f7f7;
 }

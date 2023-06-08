@@ -45,15 +45,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Zoeken...">
+              <div class="search-container">
+              <form action="/Home/PageNotFound" method="get">
+                <input type="text" class="search-input" name="searchTerm" placeholder="Zoeken...">
                 <button class="search-button">Zoek</button>
-            </div>
+                 </form>
+                 </div>
         </nav>
     </header>
+
+  
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -64,6 +68,20 @@
         <div class="container2">
             &copy; 2023 - BetaFit  <a asp-area="" asp-controller="Home"> </a>
         </div>
+
+     <div id="social-buttons">
+    <a href="https://www.facebook.com/profile.php?id=100093364544556&sk=about " target="_blank">
+      <img src="/Images/facebook.png" alt="Facebook">
+    </a>
+
+    <a href="https://www.twitter.com/Beta_Fit_" target="_blank">
+      <img src="/Images/twitter1.png" alt="Twitter">
+    </a>
+
+    <a href="https://www.instagram.com/beta_fit_/" target="_blank">
+      <img src="/Images/insta.png" alt="Instagram">
+    </a>
+     </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

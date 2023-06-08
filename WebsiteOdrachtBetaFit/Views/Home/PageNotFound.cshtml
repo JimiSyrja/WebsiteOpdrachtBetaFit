@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+</head>
+<body>
+<div class="text-center">
+        <h1 class="position5">
+            404 - Page Not Found <br />
+             <br />
+      Oops! The page you are looking for could not be found.
+        </h1>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $(".search-button").click(function(e) {
+            e.preventDefault(); // Voorkom standaard gedrag van het formulier
+
+            var searchTerm = $(".search-input").val();
+
+            // Controleer of de zoekterm niet leeg is
+            if (searchTerm.trim() !== "") {
+                // Redirect naar de 404-pagina met de zoekterm als queryparameter
+                window.location.href = "/Home/PageNotFound?searchTerm=" + encodeURIComponent(searchTerm);
+            }
+        });
+    });
+</script>
+</html>
