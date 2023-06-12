@@ -92,6 +92,7 @@ label {
     text-align: right;
 }
 
+
 .search-container {
     display: flex;
     align-items: center;
@@ -128,17 +129,20 @@ label {
 
 .table-container {
     max-width: 500px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid;
 }
 
 th, td {
     padding: 8px;
     border-bottom: 1px solid #ddd;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
 }
 
 th {
@@ -153,8 +157,8 @@ ul {
 
 .new-locations {
     position: relative;
-    bottom: 90px;
-    left: 125px;
+    top: 100px;
+    left: 250px;
     animation: zoom 5s ease-in-out infinite;
     text-align: center;
     width: 150px;
@@ -221,11 +225,8 @@ ul {
     }
 
     .position1 {
-        /*    text-align: right;
-*/ top: 20px;
-        left: 30px;
-        margin-top: 0;
-        margin-bottom: 20px;
+        text-align: center;
+        margin-left: 600px; 
         font-weight: bold;
         font-family: "Arial", sans-serif;
         font-size: 24px;
@@ -236,13 +237,13 @@ ul {
         0% {color: white;
     }
 
-    25% {color: blue;
+    25% {color: #827f7f;
     }
 
-    50% {color: darkslategrey;
+    50% {color: #827f7f;
     }
 
-    75% {color: darkgrey;
+    75% {color: #333;
     }
 
     100% {color: black;
@@ -250,13 +251,13 @@ ul {
 }
 
 .position2 {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-   /* line-height: 0.2;*/
+    text-align: right;
+    margin-left: auto;
+    width: 18em;
     font-family: "Arial", sans-serif;
     font-weight: normal;
-    transition: font-weight 0.3s ease;
+    /*    transition: font-weight 0.3s ease;
+*/
 }
 
 
@@ -323,54 +324,6 @@ ul {
 
 
 
-.contactform {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px auto;
-    max-width: 600px;
-    margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-    .contactform label {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .contactform input[type="text"],
-    .contactform textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 3px;
-        border: none;
-    }
-
-.field-validation-error {
-    color: red;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.contactform input[type="submit"] {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-    .contactform input[type="submit"]:hover {
-        background-color: #ddd;
-    }
 
 
 
@@ -439,13 +392,47 @@ img{
     }
 
 
-.navbar-nav .nav-item.active .nav-link {
-    font-weight: bold;
-}
+    .navbar-nav .nav-item.active .nav-link {
+          font-weight: bold;
+      }
 
-.nav-item{
-    font-size: 20px;
-}
+    .nav-item{
+         font-size: 20px;
+      }
+
+     .dark-mode-button {
+        position: relative;
+        width: 70px;
+        height: 30px;
+        background-color: #222;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        overflow: hidden;
+     }
+
+     .dark-mode-button .inner-circle {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: left 0.3s;
+     }
+
+     .dark-mode .dark-mode-button {
+        background-color: #eee;
+     }
+
+    .dark-mode .dark-mode-button .inner-circle {
+        left: calc(100% - 5px);
+        transform: translate(50%, -50%);
+        background-color: #000;
+    }
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -499,35 +486,53 @@ img{
 }
 
 
-.dark-mode-button {
-    position: relative;
-    width: 70px;
-    height: 30px;
-    background-color: #222;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    overflow: hidden;
+
+
+
+.contactform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
-    .dark-mode-button .inner-circle {
-        position: absolute;
-        top: 50%;
-        left: 5px;
-        transform: translate(-50%, -50%);
-        width: 20px;
-        height: 20px;
-        background-color: #fff;
-        border-radius: 50%;
-        transition: left 0.3s;
+    .contactform label {
+        display: block;
+        margin-bottom: 10px;
     }
 
-.dark-mode .dark-mode-button {
-    background-color: #eee;
+    .contactform input[type="text"],
+    .contactform textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border: none;
+    }
+
+.field-validation-error {
+    color: red;
+    text-align: center;
+    margin-top: 5px;
 }
 
-    .dark-mode .dark-mode-button .inner-circle {
-        left: calc(100% - 5px);
-        transform: translate(50%, -50%);
-        background-color: #000;
+.contactform input[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    .contactform input[type="submit"]:hover {
+        background-color: #ddd;
     }
