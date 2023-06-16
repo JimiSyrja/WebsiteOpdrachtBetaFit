@@ -18,14 +18,13 @@
 <script>
     $(document).ready(function() {
         $(".search-button").click(function(e) {
-            e.preventDefault(); // Voorkom standaard gedrag van het formulier
+            e.preventDefault(); 
 
             var searchTerm = $(".search-input").val();
 
-            // Controleer of de zoekterm niet leeg is
             if (searchTerm.trim() !== "") {
-                // Redirect naar de 404-pagina met de zoekterm als queryparameter
-                window.location.href = "/Home/PageNotFound?searchTerm=" + encodeURIComponent(searchTerm);
+
+\                window.location.href = "/Home/PageNotFound?searchTerm=" + encodeURIComponent(searchTerm);
             }
         });
     });
