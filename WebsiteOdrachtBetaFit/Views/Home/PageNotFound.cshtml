@@ -6,25 +6,24 @@
     <title>404 Page Not Found</title>
 </head>
 <body>
-<div class="text-center">
+    <div class="text-center">
         <h1 class="position5">
             404 - Page Not Found <br />
-             <br />
-      Oops! The page you are looking for could not be found.
+            <br />
+            Oops! The page you are looking for could not be found.
         </h1>
     </div>
 
 </body>
 <script>
-    $(document).ready(function() {
-        $(".search-button").click(function(e) {
-            e.preventDefault(); 
+    $(document).ready(function () {
+        $(".search-button").click(function (e) {
+            e.preventDefault();
 
             var searchTerm = $(".search-input").val();
 
             if (searchTerm.trim() !== "") {
-
-\                window.location.href = "/Home/PageNotFound?searchTerm=" + encodeURIComponent(searchTerm);
+                window.location.href = "/Home/PageNotFound?searchTerm=" + encodeURIComponent(searchTerm);
             }
         });
     });

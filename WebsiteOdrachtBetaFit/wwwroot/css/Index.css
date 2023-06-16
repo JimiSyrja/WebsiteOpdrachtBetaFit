@@ -35,24 +35,31 @@
     font-weight: bold;
     font-family: "Arial", sans-serif;
     font-size: 24px;
-    animation: position1 5s infinite;
+    animation: position1 3s infinite;
 }
 
 @keyframes position1 {
     0% {
-        color: white;
+        color: grey;
     }
 
     25% {
-        color: #827f7f;
+        color: white;
+    }
+    37.5% {
+        color: black;
     }
 
     50% {
-        color: #827f7f;
+        color: white;
+    }
+
+    62.5% {
+        color: black;
     }
 
     75% {
-        color: #333;
+        color: white;
     }
 
     100% {
@@ -65,21 +72,18 @@
     margin-left: auto;
     width: 18em;
     font-family: "Arial", sans-serif;
-    font-weight: normal;
-    /*    transition: font-weight 0.3s ease;
-*/
+    font-weight: bold;
 }
 
 
     .position2:hover {
-        color: #020eee;
+        color: #3979fc;
         font-weight: bold;
     }
 
 .position3 {
     margin-top: 100px;
-    /*    margin-bottom: 50px;
-*/ display: flex;
+    display: flex;
     justify-content: space-between;
     font-size: 24px;
     font-weight: bold;

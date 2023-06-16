@@ -83,9 +83,10 @@ footer {
     color: white;
 }
 
-.background-image {
-    background-image: url("Images/sportschool-kiezen.jpg");
-    background-size: cover;
+
+img {
+    height: 70px;
+    width: 70px;
 }
 
 .navbar {
@@ -168,3 +169,4 @@ footer {
     font-size: 50px;
     color: #f7f7f7;
 }
+
